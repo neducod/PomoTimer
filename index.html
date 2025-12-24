@@ -12,6 +12,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <style>
+    #timer{
+        color: white;
+        font-size: 45px;
+        font-weight: 500;
+    }
 #start{
     background-color: pink;
     padding: 6px;
@@ -50,12 +55,17 @@
 
     <div id="custom-1cx" class="m-10">
         <div class="flex flex-col justify-center items-center p-6">
-            <p id="timer" class="text-3xl"></p>
+            <p id="timer" class="text-4xl text-white font-luckiest"></p>
             <div class="flex flex-row gap-2">
                 <button id="start" class=" bg-pink-950">Start</button> <!--START BUTTON CHANGES TO A PAUSE BUTTON-->
                 <p id="reset" class="text-base">R</p>
             </div>
         </div>
+    </div>
+
+    <div class="flex flex-col gap-2 justify-center items-center mt-10" id="contact-p">
+        <p class="text-center p-6">Send me a message on <a href="#">X (Twitter)</a> if you are interested in coding or productive study methods</p>
+        <p class="bg-[#EC5800] text-xl">Built with love ❤️ by Josephine Jerome</p>
     </div>
 </body>
 <script src="./script.js"></script>
