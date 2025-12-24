@@ -11,6 +11,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+
+#custom-1cx{
+    /* width: 200px; */
+    /* height: 45px; */
+    background-color: pink;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  12px 12px 24px #bebebe,
+                 -12px -12px 24px #ffffff;
+}
+</style>
 </head>
 <body>
     <nav class="flex justify-center items-center flex-col p-6 sm:p-10  relative bg-[#EC5800]">
@@ -28,14 +40,17 @@
             <p>Pomodoro Timer is gotten from the pomodoro technique by Francesco Cirillo a university student who also struggled with procastination </p>
             <p>It is time management method using a timer to break work into focused 25-minute intervals (pomodoros), separated by short 5-minute breaks, with a longer break after four cycles to boost focus, reduce burnout, and combat procrastination by making large tasks less daunting</p>
         </div>
-        <img src="#" alt="">
     </div>
 
-    <div>
-        <img src="#" alt="pomodoro clock">
-        <div>
-            Where the whole magic happens
+    <div id="custom-1cx">
+        <div class="flex flex-col justify-center items-center">
+            <p id="timer" class="text-3xl">25:00</p>
+            <div class="flex flex-row gap-2">
+                <button id="start" class="p-6 bg-pink-950" onclick="startTimer()">START</button> <!--START BUTTON CHANGES TO A PAUSE BUTTON-->
+                <p id="reset" class="text-base">R</p>
+            </div>
         </div>
     </div>
 </body>
+<script src="./script.js"></script>
 </html>
