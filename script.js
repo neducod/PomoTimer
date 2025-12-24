@@ -5,7 +5,7 @@ const resetBtn = document.getElementById("reset");
 let isRunning = false;
 let interval;
 let minutes = 24;
-let seconds = 59;
+let seconds = "59";
 /*
 function startTimer(){
     // document.getElementById("timer").innerHTML = setInterval();
@@ -67,7 +67,7 @@ function updateTimer() {
 startBtn.addEventListener("click", function () {
     if (!isRunning) {
         isRunning = true;
-        startBtn.textContent = "Stop";
+        startBtn.textContent = "Pause";
         // timerContainer.style.border = "1px solid lightgray";
 
         interval = setInterval(() => {
