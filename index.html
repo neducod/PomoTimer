@@ -12,21 +12,55 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <style>
+    #closing3{
+        /* background-color: #ec5800; */
+    }
     #timer{
         color: white;
         font-size: 45px;
         font-weight: 500;
     }
+    #reset{
+        display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 8px;
+  height: 36px;
+  width: 120px;
+  border: none;
+  background: #5e41de33;
+  border-radius: 20px;
+  cursor: pointer;
+    }
+    #reset:hover{
+        background: #5e41de4d;
+    }
 #start{
+    margin-right: 5px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 8px;
+  height: 36px;
+  width: 120px;
+  border: none;
+  background: #5e41de33;
+  border-radius: 20px;
+  cursor: pointer;
+    /*
     background-color: pink;
     padding: 6px;
     width: 150px;
     margin: 2px;
     border-radius: 5px;
+    */
+}
+#start:hover {
+  background: #5e41de4d;
 }
 #custom-1cx{
-    /* width: 200px; */
-    /* height: 45px; */
     background-color: pink;
     border-radius: 50px;
     background: #e0e0e0;
@@ -56,16 +90,16 @@
     <div id="custom-1cx" class="m-10">
         <div class="flex flex-col justify-center items-center p-6">
             <p id="timer" class="text-4xl text-white font-luckiest"></p>
-            <div class="flex flex-row gap-2">
-                <button id="start" class=" bg-pink-950">Start</button> <!--START BUTTON CHANGES TO A PAUSE BUTTON-->
-                <p id="reset" class="text-base">R</p>
+            <div class="flex flex-row gap-6">
+                <button id="start" class="cursor-pointer bg-gradient-to-b from-indigo-500 to-indigo-600 shadow-[0px_4px_32px_0_rgba(99,102,241,.70)] px-6 py-3 rounded-xl border-[1px] border-slate-500 text-white font-medium group">Start</button> <!--START BUTTON CHANGES TO A PAUSE BUTTON-->
+                <p id="reset" class="text-base">Reset</p>
             </div>
         </div>
     </div>
 
-    <div class="flex flex-col gap-2 justify-center items-center mt-10" id="contact-p">
-        <p class="text-center p-6">Send me a message on <a href="#">X (Twitter)</a> if you are interested in coding or productive study methods</p>
-        <p class="bg-[#EC5800] text-xl">Built with love ❤️ by Josephine Jerome</p>
+    <div class="flex flex-col gap-2 justify-center items-center mt-10" id="closing3">
+        <p class="text-center p-6">Send me a message on <a href="#">X (Twitter)</a> if you are interested in coding or productive study methods</p> 
+        <p class="text-xl">Built with love ❤️ by Josephine Jerome</p>
     </div>
 </body>
 <script src="./script.js"></script>
