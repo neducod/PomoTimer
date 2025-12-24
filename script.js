@@ -60,15 +60,15 @@ startBtn.addEventListener("click", function (){
 
 // Function to update timer display
 function updateTimer() {
-    timerDisplay.innerHTML = `${minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+    timer.innerHTML = `${minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
 }
 
 // Start/Stop button functionality
-startButton.addEventListener("click", function () {
+startBtn.addEventListener("click", function () {
     if (!isRunning) {
         isRunning = true;
         startBtn.textContent = "Stop";
-        timerContainer.style.border = "1px solid lightgray";
+        // timerContainer.style.border = "1px solid lightgray";
 
         interval = setInterval(() => {
             if (seconds > 0 || minutes > 0) {
@@ -88,7 +88,7 @@ startButton.addEventListener("click", function () {
         clearInterval(interval);
         isRunning = false;
         startBtn.textContent = "Start";
-        timerContainer.style.border = "2px solid red";
+        // timerContainer.style.border = "2px solid red";
     }
 });
 
