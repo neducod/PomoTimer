@@ -112,14 +112,43 @@
             <button id="btnOpt" class="text-base">Short Break</button>
             <button id="btnOpt">Long Break</button>
         </div>
-        <div class="flex flex-col justify-center items-center p-6">
+
+        <div class="flex flex-col justify-center items-center p-6" data-category="pomodoro">
             <p id="timer" class="text-4xl text-white font-luckiest"></p>
             <div class="flex flex-row gap-6">
                 <button id="start" class="cursor-pointer bg-gradient-to-b from-indigo-500 to-indigo-600 shadow-[0px_4px_32px_0_rgba(99,102,241,.70)] px-6 py-3 rounded-xl border-[1px] border-slate-500 text-white font-medium group">Start</button> <!--START BUTTON CHANGES TO A PAUSE BUTTON-->
                 <p id="reset" class="text-base">Reset</p>
             </div>
         </div>
+
+        <div class="flex flex-col justify-center items-center-safe p-6" data-category="shortbreak">
+            <p id="#" class="text-4xl text-white font-luckiest">5:00</p>
+            <div class="flex flex-row gap-6">
+                <button>Start</button>
+                <button>Reset</button>
+            </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center-safe p-6" data-category="longbreak">
+            <p id="#" class="text-4xl text-white font-luckiest">15:00</p>
+            <div class="flex flex-row gap-6">
+                <button>Start</button>
+                <button>Reset</button>
+            </div>
+        </div>
+
+
+
+
+
     </div>
+
+
+
+
+
+
+
 
     <div class="flex flex-col gap-2 justify-center items-center mt-10" id="closing3">
         <p class="text-center p-6">Send me a message on <a href="https://x.com/nedu_nony">X (Twitter)</a> if you are interested in coding or productive study methods</p> 
