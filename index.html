@@ -108,12 +108,12 @@
 
     <div id="custom-1cx" class="m-10">
         <div class="flex flex-row gap-6 justify-center items-center mt-10">
-            <button class="flex justify-center items-center p-6 gap-2 h-[36px] w-[120px] border-0 bg-[#5e41de33]" id="btnOpt">Pomodoro</button>
-            <button id="btnOpt" class="text-base">Short Break</button>
-            <button id="btnOpt">Long Break</button>
+            <button class="flex justify-center items-center p-6 gap-2 h-[36px] w-[120px] border-0 bg-[#5e41de33]" id="btnOpt" onclick="filterDivs('pomodoro')">Pomodoro</button>
+            <button id="btnOpt" class="text-base" onclick="filterDivs('shortbreak')">Short Break</button>
+            <button id="btnOpt" onclick="filterDivs('longbreak')">Long Break</button>
         </div>
 
-        <div class="flex flex-col justify-center items-center p-6" data-category="pomodoro">
+        <div class="flex flex-col justify-center items-center p-6" data-category="pomodoro" id="container">
             <p id="timer" class="text-4xl text-white font-luckiest"></p>
             <div class="flex flex-row gap-6">
                 <button id="start" class="cursor-pointer bg-gradient-to-b from-indigo-500 to-indigo-600 shadow-[0px_4px_32px_0_rgba(99,102,241,.70)] px-6 py-3 rounded-xl border-[1px] border-slate-500 text-white font-medium group">Start</button> <!--START BUTTON CHANGES TO A PAUSE BUTTON-->
@@ -121,7 +121,7 @@
             </div>
         </div>
 
-        <div class="flex flex-col justify-center items-center-safe p-6" data-category="shortbreak">
+        <div class="flex flex-col justify-center items-center-safe p-6" data-category="shortbreak" id="container">
             <p id="#" class="text-4xl text-white font-luckiest">5:00</p>
             <div class="flex flex-row gap-6">
                 <button>Start</button>
@@ -129,7 +129,7 @@
             </div>
         </div>
 
-        <div class="flex flex-col justify-center items-center-safe p-6" data-category="longbreak">
+        <div class="flex flex-col justify-center items-center-safe p-6" data-category="longbreak" id="container">
             <p id="#" class="text-4xl text-white font-luckiest">15:00</p>
             <div class="flex flex-row gap-6">
                 <button>Start</button>
