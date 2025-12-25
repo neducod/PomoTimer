@@ -123,7 +123,7 @@ updateTimer();
 function filterDivs(category){
     let divs = document.getElementById("container");
 
-    Image.forEach(container => {
+    filterDivs.forEach(container => {
         if (category === 'all' || container.getAttributes('data-category') === category){
             container.style.display = 'block';
         } else{
