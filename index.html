@@ -61,16 +61,35 @@
   background: #5e41de4d;
 }
 #custom-1cx{
+    padding-top: 20px;
     background-color: pink;
     border-radius: 50px;
     background: #e0e0e0;
     box-shadow:  12px 12px 24px #bebebe,
                  -12px -12px 24px #ffffff;
+
 }
+#btnOpt{
+        display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 8px;
+  height: 36px;
+  width: 110px;
+  border: none;
+  background: #5e41de33;
+  border-radius: 20px;
+  cursor: pointer;
+    }
+    #btnOpt:hover{
+        background: #5e41de4d;
+    }
 </style>
 </head>
 <body>
-    <nav class="flex justify-center items-center flex-col p-6 sm:p-10  relative bg-[#EC5800]">
+    <nav class="flex justify-center items-center flex-col p-6 sm:p-10  relative   bg-[#EC5800]">
+        <!--bg-[#EC5800]  -->
         <img src="./src/assets/wood-royalty-free-photography-wood-sign-board-767ffa88c46f7dbc8f95842a19badef6.png" alt="" class="#">
         <div class="absolute top-1/2 left-3/4      transform -translate-x-1/2 translate-y-1/2">
             <h1 class="font-luckiest text-3xl text-center">PomoTimer</h1>
@@ -88,6 +107,11 @@
     </div>
 
     <div id="custom-1cx" class="m-10">
+        <div class="flex flex-row gap-6 justify-center items-center mt-10">
+            <button class="flex justify-center items-center p-6 gap-2 h-[36px] w-[120px] border-0 bg-[#5e41de33]" id="btnOpt">Pomodoro</button>
+            <button id="btnOpt" class="text-base">Short Break</button>
+            <button id="btnOpt">Long Break</button>
+        </div>
         <div class="flex flex-col justify-center items-center p-6">
             <p id="timer" class="text-4xl text-white font-luckiest"></p>
             <div class="flex flex-row gap-6">
@@ -98,8 +122,8 @@
     </div>
 
     <div class="flex flex-col gap-2 justify-center items-center mt-10" id="closing3">
-        <p class="text-center p-6">Send me a message on <a href="#">X (Twitter)</a> if you are interested in coding or productive study methods</p> 
-        <p class="text-xl">Built with love ❤️ by Josephine Jerome</p>
+        <p class="text-center p-6">Send me a message on <a href="https://x.com/nedu_nony">X (Twitter)</a> if you are interested in coding or productive study methods</p> 
+        <p class="text-xl">Built with love ❤️ by <a href="https://my-portfolio-jade-seven-80.vercel.app/">Josephine Jerome</a>  </p>
     </div>
 </body>
 <script src="./script.js"></script>
