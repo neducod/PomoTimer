@@ -160,9 +160,19 @@ filterDivs('pomodoro');
 
 const btnSound = "./src/son/old-radio-button-click-97549.mp3";
 
-const btnClick = document.getElementById("btnClick")
+const btnClick = document.getElementById("start")
 
 btnClick.addEventListener("click", () => {
     const audio = new Audio (btnSound);
     audio.play();
-})
+});
+
+
+const secondBtnsound = "./src/son/old-radio-button-click-97549.mp3";
+
+const secondBtnClick = document.getElementById("reset");
+
+secondBtnClick.addEventListener("click", () => {
+    const audio = new Audio (secondBtnsound);
+    audio.play()
+});
