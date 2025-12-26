@@ -12,6 +12,22 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <style>
+    #btnClick{
+        display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 8px;
+  color: black;
+  height: 36px;
+  width: 120px;
+  border: none;
+  background: #d1de4133;
+  border-radius: 20px;
+  cursor: pointer;
+
+  margin: 100px;
+    }
     nav{
         background: #5e41de33; 
     }
@@ -173,7 +189,23 @@
 
 
 
+    <button id="btnClick">Tap Me</button>
+    <!-- 
+        // Define the sound file URL
+const soundUrl = "path/to/your/sound.mp3"; // Replace with your sound file path or URL
 
+// Get the button element
+const button = document.getElementById("myButton");
+
+// Add a click event listener
+button.addEventListener("click", () => {
+    // Create a new Audio object every time the button is clicked
+    const audio = new Audio(soundUrl);
+    audio.play(); // Play the sound
+});
+
+
+     -->
 
 
 
