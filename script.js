@@ -119,7 +119,7 @@ updateTimer();
 
 
 
-
+/*
 function filterDivs(category){
     let divs = document.getElementById("container");
 
@@ -131,5 +131,24 @@ function filterDivs(category){
         }
     })
 }
+
+*/
+
+
+
+
+
+function filterDivs(category) {
+    const containers = document.querySelectorAll(".container");
+
+    containers.forEach(container => {
+        if (container.dataset.category === category) {
+            container.style.display = "flex";
+        } else {
+            container.style.display = "none";
+        }
+    });
+}
+
 
 filterDivs('pomodoro');
