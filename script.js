@@ -131,3 +131,5 @@ function filterDivs(category){
         }
     })
 }
+
+filterDivs('pomodoro');
