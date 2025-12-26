@@ -15,6 +15,9 @@
     nav{
         background: #5e41de33; 
     }
+    .container p{
+        color: white;
+    }
     #closing3{
         margin: 30px 0px 5px 0px;
         /* TOP RIGHT BOTTOM LEFT */
@@ -70,6 +73,23 @@
     */
 }
 #start:hover {
+  background: #5e41de4d;
+}
+.start{
+    margin-right: 5px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 8px;
+  height: 36px;
+  width: 120px;
+  border: none;
+  background: #5e41de33;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.start:hover {
   background: #5e41de4d;
 }
 #custom-1cx{
@@ -133,19 +153,19 @@
             </div>
         </div>
 
-        <div class="flex flex-col justify-center items-center-safe p-6  container" data-category="shortbreak" id="#">
+        <div class="flex flex-col justify-center items-center safe p-6  container" data-category="shortbreak" id="#">
             <p id="#" class="text-4xl text-white font-luckiest">5:00</p>
             <div class="flex flex-row gap-6">
-                <button>Start</button>
-                <button>Reset</button>
+                <button class="start">Start</button>
+                <button class="start">Reset</button>
             </div>
         </div>
 
-        <div class="flex flex-col justify-center items-center-safe p-6  container" data-category="longbreak" id="#">
+        <div class="flex flex-col justify-center items-center safe p-6  container" data-category="longbreak" id="#">
             <p id="#" class="text-4xl text-white font-luckiest">15:00</p>
             <div class="flex flex-row gap-6">
-                <button>Start</button>
-                <button>Reset</button>
+                <button class="start">Start</button>
+                <button class="text-base start">Reset</button>
             </div>
         </div>
     </div>
