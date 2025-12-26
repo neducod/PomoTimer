@@ -152,3 +152,17 @@ function filterDivs(category) {
 
 
 filterDivs('pomodoro');
+
+
+
+
+
+
+const btnSound = "./src/son/old-radio-button-click-97549.mp3";
+
+const btnClick = document.getElementById("btnClick")
+
+btnClick.addEventListener("click", () => {
+    const audio = new Audio (btnSound);
+    audio.play();
+})
