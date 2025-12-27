@@ -223,8 +223,8 @@ secondStartbtn.addEventListener("click", function(){
 secondResetbtn.addEventListener("click", function(){
     clearInterval(secinterval);
     isRunningsecond = false;
-    secMinutes = 5;
-    secSeconds = 00;
+    secMinutes = 4;
+    secSeconds = 59;
     updateshortTimer();
     secondStartbtn.textContent = "Start";
 });
