@@ -176,3 +176,35 @@ secondBtnClick.addEventListener("click", () => {
     const audio = new Audio (secondBtnsound);
     audio.play()
 });
+
+
+
+//short break timer
+const secondTimer = document.getElementById("fiveMin")
+const secondStartbtn = document.getElementById("secondBtna")
+const secondResetbtn = document.getElementById("secondBtnb")
+
+let isRunningsecond = false;
+let secinterval;
+let secMinutes = 5;
+let secSeconds = 59;
+
+function updateshortTimer(){
+    secondTimer.innerHTML = `${secMinutes}:${secSeconds < 10 ? '0' + secSeconds : secSeconds}`;
+}
+
+
+secondStartbtn.addEventListener("click", function(){
+    if (isRunningsecond){
+        isRunningsecond = true;
+        secondStartbtn.textContent = "Pause";
+
+        secinterval = setInterval(() => {
+            if (secSeconds > 0 || secMinutes > 0) {
+                secSeconds = 59;
+                secMinutes--;
+            }
+            
+        })
+    }
+})
