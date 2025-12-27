@@ -178,6 +178,20 @@ secondBtnClick.addEventListener("click", () => {
 });
 
 
+// const finalBtnSound = "./src/son/old-radio-button-click-97549.mp3";
+
+// const finalBtnClicks = document.querySelector(".start");
+
+// finalBtnClicks.addEventListener("click", (){
+//     const audio = new Audio (finalBtnSound);
+//     audio.play()
+// });
+
+
+
+
+
+
 
 //short break timer
 const secondTimer = document.getElementById("fiveMin")
