@@ -186,25 +186,47 @@ const secondResetbtn = document.getElementById("secondBtnb")
 
 let isRunningsecond = false;
 let secinterval;
-let secMinutes = 5;
+let secMinutes = 4;
 let secSeconds = 59;
 
 function updateshortTimer(){
     secondTimer.innerHTML = `${secMinutes}:${secSeconds < 10 ? '0' + secSeconds : secSeconds}`;
 }
 
-
 secondStartbtn.addEventListener("click", function(){
-    if (isRunningsecond){
+    if (!isRunningsecond) {
         isRunningsecond = true;
         secondStartbtn.textContent = "Pause";
 
         secinterval = setInterval(() => {
-            if (secSeconds > 0 || secMinutes > 0) {
-                secSeconds = 59;
-                secMinutes--;
+            if (secSeconds > 0 || secMinutes > 0){
+                secSeconds--;
+                if (secSeconds === 0 && secMinutes > 0){
+                    secSeconds = 59;
+                    secMinutes--;
+                }
+                updateshortTimer();
+            } else{
+                clearInterval(secinterval); //
+                isRunningsecond = false;
+                secondStartbtn.textContent = "Start";
             }
-            
-        })
+        }, 1000);
+    } else {
+        clearInterval(secinterval);
+        isRunningsecond = false;
+        secondStartbtn.textContent = "Start"
     }
 })
+
+
+secondResetbtn.addEventListener("click", function(){
+    clearInterval(secinterval);
+    isRunningsecond = false;
+    secMinutes = 5;
+    secSeconds = 00;
+    updateshortTimer();
+    secondStartbtn.textContent = "Start";
+});
+
+updateshortTimer();
