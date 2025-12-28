@@ -6,55 +6,6 @@ let isRunning = false;
 let interval;
 let minutes = 24;
 let seconds = "59";
-/*
-function startTimer(){
-    // document.getElementById("timer").innerHTML = setInterval();
-    document.getElementById("timer").innerHTML = `${minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
-
-}
-*/
-/*
-
-startBtn.addEventListener("click", function (){
-    if(!isRunning){
-        isRunning = true;
-        startBtn.textContent = "Stop"
-    }
-    interval = setInterval (() => {
-        if (seconds > 0 || minutes > 0) {
-            seconds--;
-            if (seconds === 0 && minutes > 0) {
-                seconds = 59;
-                minutes--;
-            }
-            updateTimer();
-        } else {
-            clearInterval(interval);
-            isRunning = false;
-            startButton.textContent = "Start";
-        }
-    }, 1000);
-} else {
-    clearInterval(interval);
-    isRunning = false;
-    startBtn.textContent = "Start";
-}
-});
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -176,6 +127,21 @@ secondBtnClick.addEventListener("click", () => {
     const audio = new Audio (secondBtnsound);
     audio.play()
 });
+
+
+
+
+const shortSound = "./src/son/old-radio-button-click-97549.mp3";
+
+const shortSoundbtn = document.getElementById("secondBtna");
+
+secondBtna.addEventListener("click", () => {
+    const audio = new Audio (secondBtnsound);
+    audio.play()
+});
+
+
+
 
 
 // const finalBtnSound = "./src/son/old-radio-button-click-97549.mp3";
