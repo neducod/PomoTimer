@@ -235,3 +235,22 @@ secondResetbtn.addEventListener("click", function(){
 });
 
 updateshortTimer();
+
+
+//longbreak timer
+const displayTimer = document.getElementById("displayTimer");
+const thirdStartBtn = document.getElementById("thirdBtna");
+const thirdResetBtn = document.getElementById("thirdBtnb");
+
+let isRunningthird = false;
+let thirdinterval;
+let thirdMinutes = 14;
+let thirdSeconds = 59;
+
+function updateLongTimer(){
+    displayTimer.innerHTML = `${thirdMinutes}: ${thirdSeconds < 10 ? '0' + thirdSeconds : thirdSeconds}`;
+}
+
+thirdStartBtn.addEventListener("click", )
+
+updateLongTimer()
