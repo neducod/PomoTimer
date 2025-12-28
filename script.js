@@ -130,7 +130,6 @@ secondBtnClick.addEventListener("click", () => {
 
 
 
-
 const shortSound = "./src/son/old-radio-button-click-97549.mp3";
 
 const shortSoundbtn = document.getElementById("secondBtna");
@@ -140,8 +139,34 @@ secondBtna.addEventListener("click", () => {
     audio.play()
 });
 
+const shortSoundb = "./src/son/old-radio-button-click-97549.mp3";
+
+const shortSoundbtna = document.getElementById("secondBtnb");
+
+secondBtnb.addEventListener("click", () => {
+    const audio = new Audio (secondBtnsound);
+    audio.play()
+});
 
 
+const longSound = "./src/son/old-radio-button-click-97549.mp3";
+
+const longSoundbtn = document.getElementById("thirdBtna");
+
+longSoundbtn.addEventListener("click", () => {
+    const audio = new Audio (secondBtnsound);
+    audio.play()
+});
+
+
+const longSoundb = "./src/son/old-radio-button-click-97549.mp3";
+
+const longSoundbtnb = document.getElementById("thirdBtnb");
+
+longSoundbtnb.addEventListener("click", () => {
+    const audio = new Audio (secondBtnsound);
+    audio.play()
+});
 
 
 // const finalBtnSound = "./src/son/old-radio-button-click-97549.mp3";
