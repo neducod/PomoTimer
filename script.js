@@ -254,7 +254,7 @@ function updateLongTimer(){
 thirdStartBtn.addEventListener("click",function(){
     if(!isRunningthird){
         isRunningthird = true;
-        thirdStartBtn.textContent = "Jessica";
+        thirdStartBtn.textContent = "Pause";
 
         thirdinterval = setInterval(() => {
             if (thirdSeconds > 0 || secMinutes > 0){
@@ -276,5 +276,14 @@ thirdStartBtn.addEventListener("click",function(){
         thirdStartBtn.textContent = "Start"
     }
 } )
+
+thirdResetBtnResetbtn.addEventListener("click", function(){
+    clearInterval(thirdintervalinterval);
+    isRunningthird = false;
+    thirdMinutesMinutes = 4;
+    thirdSeconds = 59;
+    updateLongTimer();
+    thirdStartBtn.textContent = "Start";
+});
 
 updateLongTimer()
