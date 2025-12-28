@@ -259,8 +259,21 @@ thirdStartBtn.addEventListener("click",function(){
         thirdinterval = setInterval(() => {
             if (thirdSeconds > 0 || secMinutes > 0){
                 thirdSeconds--;
+                if (thirdSeconds === 0 && thirdMinutes > 0){
+                    thirdMinutes = 59;
+                    thirdSeconds--;
+                }
+                updateLongTimer();
+            } else{
+                clearInterval(thirdSeconds);
+                isRunningthird = false;
+                thirdResetBtn.textContent = "Start"
             }
-        })
+        }, 1000);
+    } else {
+        clearInterval (thirdSeconds);
+        isRunningthird = false;
+        thirdStartBtn.textContent = "Start"
     }
 } )
 
