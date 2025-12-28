@@ -251,6 +251,17 @@ function updateLongTimer(){
     displayTimer.innerHTML = `${thirdMinutes}: ${thirdSeconds < 10 ? '0' + thirdSeconds : thirdSeconds}`;
 }
 
-thirdStartBtn.addEventListener("click", )
+thirdStartBtn.addEventListener("click",function(){
+    if(!isRunningthird){
+        isRunningthird = true;
+        thirdStartBtn.textContent = "Jessica";
+
+        thirdinterval = setInterval(() => {
+            if (thirdSeconds > 0 || secMinutes > 0){
+                thirdSeconds--;
+            }
+        })
+    }
+} )
 
 updateLongTimer()
