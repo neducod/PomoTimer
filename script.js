@@ -277,13 +277,16 @@ thirdStartBtn.addEventListener("click",function(){
     }
 } )
 
-thirdResetBtnResetbtn.addEventListener("click", function(){
-    clearInterval(thirdintervalinterval);
+thirdResetBtn.addEventListener("click", function(){
+    clearInterval(thirdinterval);
     isRunningthird = false;
-    thirdMinutesMinutes = 4;
+    thirdMinutes = 14;
     thirdSeconds = 59;
     updateLongTimer();
     thirdStartBtn.textContent = "Start";
 });
+
+
+
 
 updateLongTimer()
