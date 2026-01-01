@@ -286,7 +286,7 @@ thirdResetBtn.addEventListener("click", function(){
     thirdStartBtn.textContent = "Start";
 });
 
-
-
-
 updateLongTimer()
+
+
+
